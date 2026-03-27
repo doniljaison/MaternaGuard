@@ -24,7 +24,8 @@ services:
       - key: ALLOWED_ORIGINS
         value: https://your-frontend-domain.vercel.app
 
-  - type: pserv
-    name: maternaguard-db
+databases:
+  - name: maternaguard-db
+    databaseName: maternaguard
+    user: maternaguard_user
     plan: free
-    env: postgresql
